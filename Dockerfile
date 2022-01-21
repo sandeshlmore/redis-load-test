@@ -5,4 +5,5 @@ RUN mkdir /redis-load-test
 COPY ./Scripts /redis-load-test/Scripts
 WORKDIR /redis-load-test/Scripts
 RUN pip3 install -r requirments.txt
+
 CMD ["/redis-load-test/Scripts/start.sh"]
